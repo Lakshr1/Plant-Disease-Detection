@@ -8,7 +8,7 @@ This project is currently under the publication process. Stay tuned for updates!
 
 ## About Dataset
 
-The dataset used for this project is recreated using offline augmentation from the original dataset, which can be found on [this GitHub repo](https://github.com/username/original-dataset). It consists of approximately 87,000 RGB images of healthy and diseased crop leaves categorized into 38 different classes. The dataset is divided into the following directories:
+The dataset used for this project is recreated using offline augmentation from the original dataset, which can be found on [Keggle on this link]([https://github.com/username/original-dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset)). It consists of approximately 87,000 RGB images of healthy and diseased crop leaves categorized into 38 different classes. The dataset is divided into the following directories:
 
 - **train**: Contains 70,295 images.
 - **test**: Contains 33 images for prediction purposes.
