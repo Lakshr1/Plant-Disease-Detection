@@ -1,20 +1,3 @@
-# import streamlit as st
-
-# st.write("hi stramlit")
-# st.subheader("sub heading")
-# st.selectbox("which lang you like",['python','java'])
-# st.checkbox("Python")
-# st.checkbox("Java")
-# st.slider("PLease rate the project" ,0,100)
-# st.select_slider("Please rate us",["best","avg","worst"])
-# st.progress(10)
-
-
-# st.sidebar.title("About")
-# st.sidebar.selectbox("which lang you like",['python','java','C'])
-# st.sidebar.markdown("information")
-# st.sidebar.button("information")
-
 import streamlit as st
 import tensorflow as tf
 import numpy as np
@@ -87,7 +70,6 @@ elif app_mode == "Disease Recognition":
     st.link_button("Download Test Images","https://github.com/Lakshr1/Plant-Disease-Detection/tree/main/test/test")
     if st.button("Show Image"):
         st.image(test_image, width=4, use_column_width=True)
-    
     if st.button("Predict"):
         st.snow()
         st.write("Our Prediction")
@@ -164,3 +146,22 @@ elif app_mode == "Disease Recognition":
         else:
             st.warning("Non-edible: No specific treatment for complete recovery ")
 
+
+
+
+# import streamlit as st
+
+# st.write("hi stramlit")
+# st.subheader("sub heading")
+# st.selectbox("which lang you like",['python','java'])
+# st.checkbox("Python")
+# st.checkbox("Java")
+# st.slider("PLease rate the project" ,0,100)
+# st.select_slider("Please rate us",["best","avg","worst"])
+# st.progress(10)
+
+
+# st.sidebar.title("About")
+# st.sidebar.selectbox("which lang you like",['python','java','C'])
+# st.sidebar.markdown("information")
+# st.sidebar.button("information")
