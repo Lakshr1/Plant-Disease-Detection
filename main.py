@@ -84,6 +84,7 @@ elif(app_mode=="About"):
 elif app_mode == "Disease Recognition":
     st.header("Disease Recognition")
     test_image = st.file_uploader("Choose an Image:")
+    st.link_button("Download Test Images","https://github.com/Lakshr1/Plant-Disease-Detection/tree/main/test/test")
     if st.button("Show Image"):
         st.image(test_image, width=4, use_column_width=True)
     
