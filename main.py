@@ -1,3 +1,4 @@
+
 import streamlit as st
 import tensorflow as tf
 import numpy as np
@@ -14,7 +15,7 @@ def model_prediction(test_image):
 
 #Sidebar
 st.sidebar.title("Dashboard")
-app_mode = st.sidebar.selectbox("Select Page",["Home","About","Disease Recognition"])
+app_mode = st.sidebar.selectbox("Select Page",["Home","About","Disease Recognition","Source Code"])
 
 
 
@@ -61,15 +62,17 @@ elif(app_mode=="About"):
                 3. validation (17572 images)
 
                 """)
+    st.link_button("Source Code","https://github.com/Lakshr1/Plant-Disease-Detection")
     
 
 
 elif app_mode == "Disease Recognition":
     st.header("Disease Recognition")
-    test_image = st.file_uploader("Choose an Image:")
+    test_image = st.file_uploader("Choose an Image :")
     st.link_button("Download Test Images","https://github.com/Lakshr1/Plant-Disease-Detection/tree/main/test/test")
     if st.button("Show Image"):
         st.image(test_image, width=4, use_column_width=True)
+    
     if st.button("Predict"):
         st.snow()
         st.write("Our Prediction")
@@ -145,9 +148,14 @@ elif app_mode == "Disease Recognition":
             st.write("Fertilizer Recommendations:", treatable_diseases[predicted_class])
         else:
             st.warning("Non-edible: No specific treatment for complete recovery ")
-
-
-
+#Source
+elif(app_mode=="Source Code"):
+    st.header("Source")
+    st.markdown("""
+                ### Plant Disease Detection
+                This repository contains a plant disease detection application that leverages machine learning techniques to identify diseases in crop leaves.
+                """)
+    st.link_button("Source Code","https://github.com/Lakshr1/Plant-Disease-Detection")
 
 # import streamlit as st
 
